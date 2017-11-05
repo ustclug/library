@@ -1,0 +1,4 @@
+title: LUG书库
+baseurl: ""
+url: "https://library.ustclug.org"
+permalink: :douban_url

@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+:focus {
+    outline: 0;
+}
+a {
+    color: #08c;
+    text-decoration: none;
+}
+
+#header {
+    height: 60px;
+    background-color: #222;
+}
+header {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+#title {
+    display: inline-block;
+    margin: 15px 30px;
+    line-height: 30px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #aaa;
+}
+form {
+    display: inline;
+}
+#login, #logout {
+    display: block;
+    margin: 10px 30px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    height: 40px;
+    float: right;
+    border-radius: 5px;
+    border: 0;
+    line-height: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#login {color: #fff; background: #28a745 linear-gradient(-180deg, #34d058 0%, #28a745 90%);}
+#login:hover {background: #269f42 linear-gradient(-180deg, #2fcb53 0%, #269f42 90%);}
+#login:focus {box-shadow: 0 0 0 2px rgba(52,208,88,0.3);}
+#login:active {background: #279f43 none; box-shadow: inset 0 3px 5px rgba(27,31,35,0.15);}
+#logout {color: #cb2431; background: #fafbfc linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);}
+#logout:hover {color: #fff; background: #cb2431 linear-gradient(-180deg, #de4450 0%, #cb2431 90%);}
+#logout:focus {box-shadow: 0 0 0 2px rgba(203,36,49,0.3);}
+#logout:active {color: #fff; background: #b5202c none;box-shadow: inset 0 3px 5px rgba(27,31,35,0.15);}
+
+#container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1160px;
+}
+
+ul {
+    padding: 0;
+}
+ul li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+ul li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+ul li {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    border: 1px solid #ddd;
+}
+ul .heading {
+    background-color: #f5f5f5;
+    color: #333;
+}
+.book-unavailable {
+    background-color: #c0c0c0;
+}
+.problem-title {
+    text-decoration: none;
+    color: #08c;
+}
+.problem-title:hover {
+    text-decoration: underline;
+}
+.clear {
+    clear: both;
+}
+ul li span.column-isbn {
+    width: 9em;
+}
+ul li span.column-title {
+    width: 16em;
+}
+ul li span.column-author {
+    width: 16em;
+}
+@media(max-width: 1000px) {
+ul li span.column-keywords {
+    display: none;
+}
+}
+@media(max-width: 800px) {
+.column-isbn, .column-author {
+    display: none;
+}
+}
+ul li span.column-keywords {
+    float: none;
+    width: calc(100% - 49em);
+}
+ul li span.column-source {
+    float: right;
+    width: 8em;
+}
+ul li span {
+    display: inline-block;
+    float: left;
+}
+.problem-score {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 26px;
+}
+#link, #flag, #submit {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 30px 10px;
+    line-height: 30px;
+    font-size: 18px;
+    border-radius: 1000px;
+    border: 1px solid;
+    text-decoration: none;
+}
+#link {color: #333; background-color: #fff; border-color: #ccc;}
+#link:hover {background-color: #e6e6e6; border-color: #adadad;}
+#link:focus {background-color: #e6e6e6; border-color: #8c8c8c;}
+#link:active {box-shadow: inset 0 3px 5px rgba(0,0,0,.125);}
+#submit {color: #fff; background-color: #337ab7; border-color: #2e6da4;}
+#submit:hover {background-color: #286090; border-color: #204d74;}
+#submit:focus {background-color: #286090; border-color: #122b40;}
+#submit:active {box-shadow: inset 0 3px 5px rgba(0,0,0,.125);}
+#submit {
+    cursor: pointer;
+}
+#flag {
+    border-color: #ccc;
+}
+
+.msg-error, .msg-info, .msg-success, .msg-fail {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 720px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.msg-error {color: #a94442; background-color: #f2dede; border-color: #ebccd1;}
+.msg-info {color: #31708f; background-color: #d9edf7; border-color: #bce8f1;}
+.msg-success {color: #3c763d; background-color: #dff0d8; border-color: #d6e9c6;}
+.msg-fail {color: #8a6d3b; background-color: #fcf8e3; border-color: #faebcc;}
+
+.barbox {
+    display: inline-block;
+    width: 80%;
+    float: right;
+}
+.bar {
+    display: inline-block;
+    background-color: #08c;
+}
