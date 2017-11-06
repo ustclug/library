@@ -11,7 +11,7 @@ layout: default
   <ul>
     <li class="book-header"><span class="column-isbn">ISBN</span><span class="column-title">书名</span><span class="column-author">作者</span><span class="column-keywords">关键字</span><span class="column-source">来源</span><div class="clear"></div></li>
     {% for book in site.posts %}
-      <li class="book-{% if book.available != TRUE %}un{% endif %}available"><span class="column-isbn">{% book.isbn %}</span><span class="column-title"><a href="{% book.douban_url %}">{% book.title %}</a></span><span class="column-author">{% book.author %}</span><span class="column-keywords">{% book.keywords %}</span><span class="column-source">{% book.source %}</span><div class="clear"></div></li>
+      <li class="book-{% unless book.available %}un{% endunless %}available"><span class="column-isbn">{{ book.isbn }}</span><span class="column-title"><a href="{{ book.douban_url }}">{{ book.title }}</a></span><span class="column-author">{{ book.author }}</span><span class="column-keywords">{{ book.keywords }}</span><span class="column-source">{{ book.source }}</span><div class="clear"></div></li>
     {% endfor %}
   </ul>
 </div>
